@@ -163,6 +163,7 @@ def create_common_fields(source_system: str, source_url: str, data: dict) -> dic
         "business_timestamp": datetime.now().isoformat(),
         "is_deleted": False,
         "language": "fr",
+        "source": source_system,
         "normalized_text": "",
         **data
     }

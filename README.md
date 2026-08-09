@@ -260,7 +260,27 @@ Ces KPIs permettent de visualiser en temps réel l'état des données ingérées
 
 ---
 
-## 10) Preuves de test 
+## Interface de recherche
+
+Une interface web légère a été développée pour permettre une recherche en temps réel dans les données indexées (professeurs, actualités, publications Crossref).
+
+### Fonctionnalités :
+- Recherche full-text avec mise en évidence des mots-clés
+- Pagination des résultats
+- Tags colorés par source
+
+### Accès :
+- Ouvrir le fichier `frontend/index.html` dans un navigateur
+- Ou utiliser le proxy Python : `python3 frontend/proxy.py` puis http://localhost:8080
+
+### Technologies :
+- HTML / CSS / JavaScript vanilla
+- Elasticsearch pour l'indexation
+- MinIO pour le stockage des données
+
+---
+
+## 10) Preuves de test
 
 Toutes les captures d'écran des tests sont disponibles dans le dossier `docs/screenshots/`.
 
@@ -273,6 +293,7 @@ Toutes les captures d'écran des tests sont disponibles dans le dossier `docs/sc
 - [ ] Elasticsearch - Résultat de recherche
 - [ ] Metabase - Dashboard (8 KPIs)
 - [ ] Docker - Tous les conteneurs en cours
+- [ ] Interface de recherche - Résultats de recherche pour un mot-clé
 
 ✅ Toutes les captures ont été prises et sont disponibles dans le dossier.
 
